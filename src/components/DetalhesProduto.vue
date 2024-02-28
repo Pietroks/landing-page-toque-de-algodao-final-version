@@ -32,8 +32,8 @@ export default {
   },
   mounted() {
 
-    this.getDetalhesProduto();
-    
+    this.getDetalhesProduto(); 
+    console.log('Nome do Produto:', this.nomeProduto); 
   },
   methods: {
     async getDetalhesProduto() {
@@ -49,9 +49,13 @@ export default {
           nome: data.nome,
           tamanho: data.tamanho,
           preco: data.preco,
-          imagem: data.imagem // Supondo que a imagem já tenha o caminho completo
+          imagem: data.imagem 
         };
+        //socialmedia messege
         this.nomeProduto = data.nome
+        
+
+
       } catch (error) {
         console.error('Erro ao obter detalhes do produto:', error);
       }

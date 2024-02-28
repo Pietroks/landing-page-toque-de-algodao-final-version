@@ -16,13 +16,15 @@ const router = createRouter({
       // route level code-splitting
       // this generates a separate chunk (About.[hash].js) for this route
       // which is lazy-loaded when the route is visited.
-      component: () => import('../views/About.vue')
+      component: () => import('../views/About.vue'),
+      meta: { title: 'Sobre' }
     },
     {
       path: '/produtos',
       name: 'produtos',
       component: () => import('../views/Produtos.vue'),
-      props: true
+      props: true,
+      meta: { breadcrumb: 'Produtos' },
     },
     {
       path: '/login',
@@ -34,27 +36,32 @@ const router = createRouter({
       name: 'dashboard',
       component: () => import('../components/Dashboard.vue'),
       props: true,
-      meta: { requiresAuth: true }
+      meta: { requiresAuth: true },
+      meta: { title: 'Dashboard' }
     },
     {
       path: `/detalhes-produto/:id`, 
       name: 'detalhes-produto',
       component: () => import('../components/DetalhesProduto.vue'),
-      props: true
+      props: true,
     },
     {
       path: '/addform',
       name: 'addform',
-      component: () => import('../components/AddForm.vue')
+      component: () => import('../components/AddForm.vue'),
+      meta: { title: 'Adicionar Produto' }
     },
     {
       path: `/editform/:id`, 
       name: 'editform',
       component: () => import('../components/EditForm.vue'),
-      props: true
-    }
+      props: true,
+      meta: { title: 'Editar Produto' }
+    },
   ]
 });
+
+
 
 router.beforeEach((to, from, next) => {
   // Verifica se a rota requer autenticação

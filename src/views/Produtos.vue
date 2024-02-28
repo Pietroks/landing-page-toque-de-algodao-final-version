@@ -9,7 +9,7 @@
           </div>
           <div class="produto-info">
             <h2>{{ produto.nome }}</h2>
-            <p>Tamanho: {{ produto.tamanho }}</p>
+            <p>Tamanhos disponiveis: {{ produto.tamanho }}</p>
             <p class="preco">R$: {{ produto.preco.toFixed(2) }}</p>
           </div>
         </router-link>

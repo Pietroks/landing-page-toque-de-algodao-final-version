@@ -7,14 +7,8 @@
         <input type="text" id="nome" v-model="produto.nome" required>
       </div>
       <div>
-        <label for="tamanho">Tamanho:</label>
-        <select id="tamanho" v-model="produto.tamanho">
-          <option value="Pequeno">P</option>
-          <option value="Médio">M</option>
-          <option value="Grande">G</option>
-          <option value="GG">GG</option>
-          <option value="XL">XL</option>
-        </select>
+        <label for="tamanho">Tamanhos:</label>
+        <input id="tamanho" v-model="produto.tamanho">
       </div>
       <div>
         <label for="preco">Preço:</label>

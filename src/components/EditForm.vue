@@ -7,14 +7,8 @@
         <input type="text" id="nome" v-model="formData.nome" required>
       </div>
       <div>
-        <label for="tamanho">Tamanho:</label>
-        <select id="tamanho" v-model="formData.tamanho">
-          <option value="pequeno">P</option>
-          <option value="medio">M</option>
-          <option value="grande">G</option>
-          <option value="extra-grande">GG</option>
-          <option value="extra-extra-grande">XL</option>
-        </select>
+        <label for="tamanho">Tamanhos:</label>
+        <input id="tamanho" v-model="formData.tamanho">
       </div>
       <div>
         <label for="preco">Preço:</label>

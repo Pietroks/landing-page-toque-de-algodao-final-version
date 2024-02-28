@@ -27,12 +27,16 @@ export default {
         exibirWhats: {
             type: Boolean,
             default: true
-        }
+        },
+        nomeProduto: ''
+    },
+    mounted() {
+        console.log('Nome do Produto em SocialMedia:', this.nomeProduto); 
     },
     methods: {
         abrirConversaWhatsApp() {
-            const numeroTelefone = 'SEU_NUMERO_DE_TELEFONE';
-            const nomeProduto = encodeURIComponent(this.nomeProduto)
+            const numeroTelefone = '';
+            const nomeProduto = decodeURIComponent(this.nomeProduto)
             const mensagem = encodeURIComponent(`Olá! Estou interessada(o) neste produto: ${nomeProduto}.`);
     // Detectar se o usuário está em um dispositivo móvel ou desktop
             const isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
@@ -43,7 +47,7 @@ export default {
         linkWhatsApp = `https://wa.me/${numeroTelefone}?text=${mensagem}`;
     } else {
         // Para desktop, use o link da API do WhatsApp
-        linkWhatsApp = `https://web.whatsapp.com/send?phone=${numeroTelefone}&text=${mensagem}`;
+        linkWhatsApp = ` https://wa.me/${numeroTelefone}/?text=${mensagem}`;
     }
     window.open(linkWhatsApp, '_blank');
     },
