@@ -17,15 +17,15 @@ export default {
 }
 </script>
 
-
+<!-- 766f8c -->
 <style>
 :root {
-    --cor--background: #cea1a6;
-    --cor--fonte: #fff;
-    --cor--titulo: #561c25;
-    --cor--hover: #70343b;
-    --cor--button: #fcacac;
-    --cor--secundaria: #955e61;
+    --cor--background: #fff6f3;
+    --cor--fonte: #50568b ;
+    --cor--titulo: #b8446c ;
+    --cor--hover: #e09dff ;
+    --cor--button: #cab9aa  ;
+    --cor--secundaria: #c24b57;
 
     --fonte--primaria: 'Poppins', sans-serif;
     --fonte--secundaria: 'Montserrat', sans-serif;
