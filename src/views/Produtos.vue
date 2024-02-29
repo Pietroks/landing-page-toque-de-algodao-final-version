@@ -155,6 +155,79 @@ export default {
 h1 {
   color: var(--cor--titulo);
 }
+
+/* responsividade */
+@media only screen and (max-width: 1069px) {
+  .produto-item {
+  position: relative;
+  width: 21.5%;
+  }
+}
+
+@media only screen and (max-width: 926px) {
+  .produto-item {
+  position: relative;
+  width: 28.5%;
+  margin-bottom: 30px;
+  margin-left: 10px;
+  }
+}
+
+@media only screen and (max-width: 910px) {
+  .produto-item {
+  position: relative;
+  width: 28%;
+  margin-bottom: 30px;
+  border: 0.1px solid var(--cor--button);
+  border-radius: 8px;
+  box-sizing: border-box;
+  }
+}
+
+@media only screen and (max-width: 810px) {
+  .produtos-lista {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 20px;
+  gap: 40px;
+}
+
+  .produto-item {
+  position: relative;
+  width: 40%;
+  margin-bottom: 30px;
+  border: 0.1px solid var(--cor--button);
+  border-radius: 8px;
+  }
+}
+
+@media only screen and (max-width: 650px) {
+  .produto-item {
+  position: relative;
+  width: 65%;
+  margin-bottom: 30px;
+  border: 0.1px solid var(--cor--button);
+  border-radius: 8px;
+  box-sizing: border-box;
+  }
+
+  div {
+    text-align: center;
+  }
+}
+
+@media only screen and (max-width: 520px) {
+  .produto-item {
+  position: relative;
+  width: 90%;
+  margin-bottom: 30px;
+  border: 0.1px solid var(--cor--button);
+  border-radius: 8px;
+  box-sizing: border-box;
+  }
+}
 </style>
 
 

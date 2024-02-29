@@ -46,9 +46,9 @@ export default {
 
   .conteudo-principal-titulo {
     font-size: 66px; /* Reduzindo o tamanho do título */
-    margin-bottom: 0px; /* Aumentando o espaço inferior do título */
     font-family: var(--fonte--primaria);
     color: var(--cor--titulo); /* Corrigindo a cor do título */
+    line-height: 60px;
   }
 
   .conteudo-principal-paragrafo {
@@ -57,7 +57,7 @@ export default {
     font-family: var(--fonte--primaria);
     color: var(--cor--fonte); /* Corrigindo a cor do texto */
     margin-bottom: 20px; /* Aumentando o espaço inferior do parágrafo */
-    margin-top: 20px;
+    margin-top: 30px;
   }
 
   .conteudo-principal-imagem {

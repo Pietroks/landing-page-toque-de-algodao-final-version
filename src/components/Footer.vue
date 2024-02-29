@@ -20,7 +20,7 @@ export default {
     width: 100%;
     color: var(--cor--fonte);
     padding-top: 80px;
-    margin-top: 150px; /* Para garantir que o footer fique no final da página */
+    margin-top: 75px; /* Para garantir que o footer fique no final da página */
     margin-bottom: auto; /* Ajuste a margem inferior conforme necessário */
     }
 </style>
