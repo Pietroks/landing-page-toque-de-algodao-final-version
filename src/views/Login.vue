@@ -106,12 +106,122 @@ input {
   font-size: 15px;
 }
 
-.erro-login {
-background-color: #f8d7da; /* Cor de fundo vermelha para indicar erro */
-color: #721c24; /* Cor do texto */
-padding: 10px; /* Espaçamento interno */
-border: 1px solid #f5c6cb; /* Borda */
-border-radius: 5px; /* Borda arredondada */
-margin-top: 10px; /* Espaçamento superior */
+
+/* reatividade */
+@media only screen and (max-width: 375px) {
+.conteudo-principal-titulo-adm {
+  font-size: 20px;
+  line-height: 10px;
+  font-family: 'Poppinsmedium', sans-serif;
+  }
+
+.formulario {
+  display: flex;
+  width: 100%;
+}
+}
+
+@media only screen and (max-width: 414px) {
+.conteudo-principal-titulo-adm {
+  font-size: 20px;
+  line-height: 10px;
+  font-family: 'Poppinsmedium', sans-serif;
+  }
+
+.formulario {
+  display: flex;
+  width: 100%;
+}
+}
+
+@media only screen and (max-width: 430px) {
+.conteudo-principal-titulo-adm {
+  font-size: 20px;
+  line-height: 10px;
+  font-family: 'Poppinsmedium', sans-serif;
+  }
+
+.formulario {
+  display: flex;
+  width: 100%;
+}
+}
+
+@media only screen and (max-width: 768px) {
+.conteudo-principal-titulo-adm {
+  font-size: 20px;
+  line-height: 10px;
+  font-family: 'Poppinsmedium', sans-serif;
+  }
+
+.formulario {
+  display: flex;
+  width: 50%;
+}
+}
+
+@media only screen and (max-width: 820px) {
+.conteudo-principal-titulo-adm {
+  font-size: 20px;
+  line-height: 10px;
+  font-family: 'Poppinsmedium', sans-serif;
+  }
+
+.formulario {
+  display: flex;
+  width: 50%;
+}
+}
+
+@media only screen and (max-width: 1024px) {
+.conteudo-principal-titulo-adm {
+  font-size: 20px;
+  line-height: 10px;
+  font-family: 'Poppinsmedium', sans-serif;
+  }
+
+.formulario {
+  display: flex;
+  width: 50%;
+}
+}
+
+@media only screen and (max-width: 280px) {
+.conteudo-principal-titulo-adm {
+  font-size: 15px;
+  line-height: 10px;
+  font-family: 'Poppinsmedium', sans-serif;
+  }
+
+.formulario {
+  display: flex;
+  width: 100%;
+}
+}
+
+@media only screen and (max-width: 853px) {
+.conteudo-principal-titulo-adm {
+  font-size: 20px;
+  line-height: 10px;
+  font-family: 'Poppinsmedium', sans-serif;
+  }
+
+.formulario {
+  display: flex;
+  width: 50%;
+}
+}
+
+@media only screen and (max-width: 412px) {
+.conteudo-principal-titulo-adm {
+  font-size: 20px;
+  line-height: 10px;
+  font-family: 'Poppinsmedium', sans-serif;
+  }
+
+.formulario {
+  display: flex;
+  width: 100%;
+}
 }
 </style>

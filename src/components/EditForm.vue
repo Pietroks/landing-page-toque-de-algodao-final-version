@@ -7,7 +7,7 @@
         <input type="text" id="nome" v-model="formData.nome" required>
       </div>
       <div>
-        <label for="tamanho">Tamanhos:</label>
+        <label for="tamanho">Tamanhos disponíveis:</label>
         <input id="tamanho" v-model="formData.tamanho">
       </div>
       <div>
@@ -243,5 +243,144 @@ background-color: var(--cor--hover);
   border-radius: 8px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   z-index: 9999;
+}
+
+/* responsividade */ 
+@media only screen and (max-width: 375px) {
+  .container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  max-width: 100%;
+}
+  
+  .button-div {
+  display: flex;
+  justify-content: space-between;
+}
+
+  form {
+    width: 100%;
+  }
+
+  img {
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 414px) {
+  .container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  max-width: 100%;
+}
+  
+  .button-div {
+  display: flex;
+  justify-content: space-between;
+}
+
+  form {
+    width: 100%;
+  }
+
+  img {
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 430px) {
+  .container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  max-width: 100%;
+}
+  
+  .button-div {
+  display: flex;
+  justify-content: space-between;
+}
+
+  form {
+    width: 100%;
+  }
+
+  img {
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  max-width: 100%;
+}
+  
+  .button-div {
+  display: flex;
+  justify-content: space-between;
+}
+
+  form {
+    width: 100%;
+  }
+
+  img {
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 820px) {
+  .container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  max-width: 100%;
+}
+  
+  .button-div {
+  display: flex;
+  justify-content: space-between;
+}
+
+  form {
+    width: 100%;
+  }
+
+  img {
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  max-width: 100%;
+}
+  
+  .button-div {
+  display: flex;
+  justify-content: space-between;
+}
+
+  form {
+    width: 100%;
+  }
+
+  img {
+    width: 100%;
+  }
 }
 </style>

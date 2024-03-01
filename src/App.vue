@@ -45,6 +45,9 @@ export default {
     max-width: 1200px;
     text-decoration: none;
 }
+
+
+  
 </style>
 
 <!-- .color1 { #b8446c };

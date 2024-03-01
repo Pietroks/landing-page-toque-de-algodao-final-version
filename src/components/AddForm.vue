@@ -161,11 +161,181 @@ cursor: not-allowed;
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
   margin-bottom: 20px;
 }
 
 #imagem {
   width: 100%;
   margin-top: 5px;
+}
+
+/* responsividade */
+@media only screen and (max-width: 375px) {
+  input, select {
+    width: 90%;
+  }
+
+  #imagem {
+    width: 90%;
+  } 
+
+  form {
+    width: 100%;
+  }
+  
+  h1 {
+    font-size: 28px;
+  }
+
+  img {
+    width: 100%;
+  }
+
+  
+}
+
+@media only screen and (max-width: 414px) {
+  input, select {
+    width: 90%;
+  }
+
+  #imagem {
+    width: 90%;
+  } 
+
+  form {
+    width: 100%;
+  }
+  
+  h1 {
+    font-size: 28px;
+  }
+
+  img {
+    width: 100%;
+  }
+
+  
+}
+
+@media only screen and (max-width: 430px) {
+  input, select {
+    width: 90%;
+  }
+
+  #imagem {
+    width: 90%;
+  } 
+
+  form {
+    width: 100%;
+  }
+  
+  h1 {
+    font-size: 28px;
+  }
+
+  img {
+    width: 100%;
+  }
+
+  
+}
+
+@media only screen and (max-width: 768px) {
+  input, select {
+    width: 95%;
+  }
+
+  #imagem {
+    width: 95%;
+  } 
+
+  form {
+    width: 100%;
+  }
+  
+  h1 {
+    font-size: 28px;
+  }
+
+  img {
+    width: 100%;
+  }
+
+  
+}
+
+@media only screen and (max-width: 820px) {
+  input, select {
+    width: 95%;
+  }
+
+  #imagem {
+    width: 95%;
+  } 
+
+  form {
+    width: 100%;
+  }
+  
+  h1 {
+    font-size: 28px;
+  }
+
+  img {
+    width: 100%;
+  }
+
+  
+}
+
+@media only screen and (max-width: 1024px) {
+  input, select {
+    width: 95%;
+  }
+
+  #imagem {
+    width: 95%;
+  } 
+
+  form {
+    width: 100%;
+  }
+  
+  h1 {
+    font-size: 28px;
+  }
+
+  img {
+    width: 100%;
+  }
+
+  
+}
+
+@media only screen and (max-width: 1280px) {
+  input, select {
+    width: 95%;
+  }
+
+  #imagem {
+    width: 95%;
+  } 
+
+  form {
+    width: 100%;
+  }
+  
+  h1 {
+    font-size: 28px;
+  }
+
+  img {
+    width: 100%;
+  }
+
+  
 }
 </style>

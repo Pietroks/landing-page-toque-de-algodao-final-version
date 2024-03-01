@@ -30,9 +30,6 @@ export default {
         },
         nomeProduto: ''
     },
-    mounted() {
-        console.log('Nome do Produto em SocialMedia:', this.nomeProduto); 
-    },
     methods: {
         abrirConversaWhatsApp() {
             const numeroTelefone = '';
@@ -141,5 +138,125 @@ export default {
 .whatsapp-link img {
     width: 20px; 
     margin-right: 5px; 
+}
+
+/*responsividade */
+@media only screen and (max-width: 845px) {
+    .conteudo-principal-links-style {
+        width: 80.5%;
+
+  }
+
+}
+
+@media only screen and (max-width: 780px) {
+    .conteudo-principal-links-style {
+        width: 80%;
+  }
+
+}
+
+@media only screen and (max-width: 675px) {
+    .conteudo-principal-links-style {
+        width: 90%;
+  }
+
+}
+
+@media only screen and (max-width: 430px) {
+    .conteudo-principal-links-style {
+        width: 100%;
+  }
+
+  .conteudo-principal-links {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%; 
+    padding-top: 25px;
+    cursor: pointer;
+}
+
+}
+
+@media only screen and (max-width: 375px) {
+    .conteudo-principal-links-style {
+        width: 100%;
+  }
+
+  .conteudo-principal-links {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%; 
+    padding-top: 25px;
+    cursor: pointer;
+    }
+    .button-div {
+    width: 100%;
+}
+
+  .conteudo-principal-links-texto {
+    font-weight: 400;
+    font-size: 15px; 
+    margin-bottom: 15px;
+  }
+
+  .conteudo-principal-links-style {
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    color: var(--cor--fonte);
+    font-size: 16px; 
+    font-weight: 500;
+    padding: 15px 15px 10px 10px;;
+    border-radius: 15px;
+    width: 60%;
+    text-align: center;
+    background-color: var(--cor--button);
+  } 
+
+}
+
+@media only screen and (max-width: 280px) {
+    .conteudo-principal-links-style {
+        width: 100%;
+  }
+
+  .conteudo-principal-links {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%; 
+    padding-top: 25px;
+    cursor: pointer;
+    }
+    .button-div {
+    width: 150%;
+}
+
+  .conteudo-principal-links-texto {
+    font-weight: 400;
+    font-size: 12px; 
+    margin-bottom: 15px;
+  }
+
+  .conteudo-principal-links-style {
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    color: var(--cor--fonte);
+    font-size: 16px; 
+    font-weight: 500;
+    padding: 15px 15px 10px 10px;;
+    border-radius: 15px;
+    width: 60%;
+    text-align: center;
+    background-color: var(--cor--button);
+  } 
+
 }
 </style>

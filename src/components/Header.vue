@@ -95,6 +95,11 @@ img:hover {
   img {
     width: 25%;
   }
+
+  .cabecalho {
+    max-width: fit-content;
+    overflow-y: hidden;
+  }
 }
 
 @media only screen and (max-width: 520px) {
@@ -112,6 +117,12 @@ img:hover {
 @media only screen and (max-width: 410px) {
   img {
     width: 50%;
+  }
+}
+
+@media only screen and (max-width: 280px) {
+  img {
+    width: 10%;
   }
 }
 </style>

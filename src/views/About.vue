@@ -24,6 +24,90 @@ export default {
 h1 {
   color: var(--cor--titulo);
 }
+
+/* responsividade */
+@media only screen and (max-width: 375px) {
+  img {
+    width: 60%;
+    align-self: center;
+    margin-bottom: 50px;
+  }
+  main {
+    display: flex;
+    justify-content: center;
+    max-width: 100%;
+    overflow: hidden;
+  }
+  h1 {
+    text-align: center;
+  }
+  p {
+    line-height: 22px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  img {
+    width: 60%;
+    align-self: center;
+    margin-bottom: 50px;
+  }
+  main {
+    display: flex;
+    justify-content: center;
+    max-width: 100%;
+    overflow: hidden;
+  }
+  h1 {
+    text-align: start;
+  }
+  p {
+    line-height: 22px;
+  }
+}
+
+@media only screen and (max-width: 820px) {
+  img {
+    width: 55%;
+    align-self: center;
+    margin-bottom: 50px;
+  }
+  main {
+    display: flex;
+    justify-content: center;
+    max-width: 100%;
+    overflow: hidden;
+  }
+  h1 {
+    text-align: start;
+  }
+  p {
+    line-height: 22px;
+    font-size: 18px;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  img {
+    width: 80%;
+    align-self: center;
+    margin-top: 80px;
+  }
+  main {
+    display: flex;
+    justify-content: center;
+    max-width: 100%;
+    overflow: hidden;
+    flex-direction: column;
+  }
+  h1 {
+    text-align: start;
+  }
+  p {
+    line-height: 22px;
+    font-size: 18px;
+  }
+}
 </style>
 
 

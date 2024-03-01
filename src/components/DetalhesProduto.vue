@@ -6,9 +6,9 @@
         <img :src="getImagemUrl(produto.imagem.filename)" :alt="produto.nome">
       </div>
       <div class="produto-info">
-        <h2>{{ produto.nome }}</h2>
-        <p>Tamanho: {{ produto.tamanho }}</p>
-        <p class="preco">Preço: R$ {{ produto.preco.toFixed(2) }}</p>
+        <h2 id="nome-produto">{{ produto.nome }}</h2>
+        <p id="tamanh-preco">Tamanho: {{ produto.tamanho }}</p>
+        <p class="preco" id="tamanh-preco">Preço: R$ {{ produto.preco.toFixed(2) }}</p>
         <social-media class="social-media-style" :textoParagrafo="textoPersonalizado" :exibirLink="false" :nomeProduto="produto.nome"/>
       </div>
     </div>
@@ -122,4 +122,427 @@ h1 {
   color: var(--cor--titulo);
 }
 
+/* responsividade */
+@media only screen and (max-width: 375px) {
+  .container {
+  width: 100%;
+}
+
+.detalhes-produto {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 60px;
+  padding: 20px;
+}
+
+.produto-imagem {
+  width: 100%; 
+}
+
+.produto-imagem img {
+  width: 100%; 
+  height: auto; 
+}
+
+.produto-info {
+  width: 50%; 
+  text-align: center;
+}
+
+#nome-produto {
+  font-size: 26px;
+}
+
+#tamanh-preco {
+  font-size: 16px;
+}
+
+h1 {
+  text-align: center;
+}
+
+}
+
+@media only screen and (max-width: 414px) {
+  .container {
+  width: 100%;
+}
+
+.detalhes-produto {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 60px;
+  padding: 20px;
+}
+
+.produto-imagem {
+  width: 100%; 
+}
+
+.produto-imagem img {
+  width: 100%; 
+  height: auto; 
+}
+
+.produto-info {
+  width: 50%; 
+  text-align: center;
+}
+
+#nome-produto {
+  font-size: 30px;
+}
+
+#tamanh-preco {
+  font-size: 20px;
+}
+
+h1 {
+  text-align: center;
+}
+
+}
+
+@media only screen and (max-width: 390px) {
+  #nome-produto {
+  font-size: 27px;
+}
+
+#tamanh-preco {
+  font-size: 19px;
+}
+}
+
+@media only screen and (max-width: 430px) {
+  .container {
+  width: 100%;
+}
+
+.detalhes-produto {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 60px;
+  padding: 20px;
+}
+
+.produto-imagem {
+  width: 100%; 
+}
+
+.produto-imagem img {
+  width: 100%; 
+  height: auto; 
+}
+
+.produto-info {
+  width: 50%; 
+  text-align: center;
+}
+
+#nome-produto {
+  font-size: 31px;
+}
+
+#tamanh-preco {
+  font-size: 21px;
+}
+
+h1 {
+  text-align: center;
+}
+
+}
+
+@media only screen and (max-width: 412px){
+  #nome-produto {
+    font-size: 29px;
+}
+
+  #tamanh-preco {
+    font-size: 19px;
+}
+}
+
+@media only screen and (max-width: 360px){
+  #nome-produto {
+    font-size: 25px;
+}
+
+  #tamanh-preco {
+    font-size: 16px;
+}
+}
+
+@media only screen and (max-width: 820px) {
+  .container {
+  width: 100%;
+}
+
+.detalhes-produto {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 60px;
+  padding: 20px;
+}
+
+.produto-imagem {
+  width: 100%; 
+}
+
+.produto-imagem img {
+  width: 100%; 
+  height: auto; 
+}
+
+.produto-info {
+  width: 50%; 
+  text-align: center;
+}
+
+.produto-info h2 {
+  font-size: 50px;
+  color: var(--cor--titulo);
+}
+
+.produto-info p {
+  font-size: 32px;
+  color: var(--cor--fonte);
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+h1 {
+  text-align: center;
+}
+
+}
+
+@media only screen and (max-width: 1024px) {
+  .container {
+  width: 100%;
+}
+
+.detalhes-produto {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 60px;
+  padding: 20px;
+}
+
+.produto-imagem {
+  width: 100%; 
+}
+
+.produto-imagem img {
+  width: 100%; 
+  height: auto; 
+}
+
+.produto-info {
+  width: 50%; 
+  text-align: center;
+}
+
+.produto-info h2 {
+  font-size: 50px;
+  color: var(--cor--titulo);
+}
+
+.produto-info p {
+  font-size: 32px;
+  color: var(--cor--fonte);
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+h1 {
+  text-align: center;
+}
+
+}
+
+@media only screen and (max-width: 540px) {
+  .container {
+  width: 100%;
+}
+
+.detalhes-produto {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 60px;
+  padding: 20px;
+}
+
+.produto-imagem {
+  width: 100%; 
+}
+
+.produto-imagem img {
+  width: 100%; 
+  height: auto; 
+}
+
+.produto-info {
+  width: 50%; 
+  text-align: center;
+}
+
+#nome-produto {
+  font-size: 34px;
+}
+
+#tamanh-preco {
+  font-size: 22px;
+}
+
+
+h1 {
+  text-align: center;
+}
+
+}
+
+@media only screen and (max-width: 280px) {
+  .container {
+  width: 100%;
+}
+
+.detalhes-produto {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 60px;
+  padding: 20px;
+}
+
+.produto-imagem {
+  width: 100%; 
+}
+
+.produto-imagem img {
+  width: 100%; 
+  height: auto; 
+}
+
+.produto-info {
+  width: 50%; 
+  text-align: center;
+}
+
+#nome-produto {
+  font-size: 18px;
+}
+
+#tamanh-preco {
+  font-size: 12px;
+}
+
+h1 {
+  text-align: center;
+  font-size: 18px;
+}
+
+}
+
+@media only screen and (max-width: 412px) {
+  .container {
+  width: 100%;
+}
+
+.detalhes-produto {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 60px;
+  padding: 20px;
+}
+
+.produto-imagem {
+  width: 100%; 
+}
+
+.produto-imagem img {
+  width: 100%; 
+  height: auto; 
+}
+
+.produto-info {
+  width: 50%; 
+  text-align: center;
+}
+
+#nome-produto {
+  font-size: 28px;
+}
+
+#tamanh-preco {
+  font-size: 18px;
+}
+
+h1 {
+  text-align: center;
+  font-size: 28px;
+}
+
+}
+
+@media only screen and (max-width: 1024px) {
+  .container {
+  width: 100%;
+}
+
+.detalhes-produto {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 60px;
+  padding: 20px;
+}
+
+.produto-imagem {
+  width: 60%; 
+}
+
+.produto-imagem img {
+  width: 100%; 
+  height: auto; 
+}
+
+.produto-info {
+  width: 50%; 
+  text-align: center;
+}
+
+.produto-info h2 {
+  font-size: 46px;
+  color: var(--cor--titulo);
+}
+
+.produto-info p {
+  font-size: 28px;
+  color: var(--cor--fonte);
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+h1 {
+  text-align: center;
+}
+
+}
 </style>
