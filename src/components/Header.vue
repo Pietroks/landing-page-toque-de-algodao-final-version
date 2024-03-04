@@ -13,7 +13,7 @@
 
 <script>
 export default {
-    name: 'Header'
+    name: 'Header',
 }
 </script>
 
@@ -66,7 +66,7 @@ img:hover {
   transition: 0.3s all; 
 }
 
-/* reatividade */
+/* responsividade */
 @media only screen and (max-width: 1069px) {
   img {
     width: 10%;

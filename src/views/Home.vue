@@ -2,15 +2,15 @@
   <div>
     <main>
       <aside class="conteudo-principal">
-              <h2 class="conteudo-principal-titulo">Toque de</h2>
-              <h2 class="conteudo-principal-titulo">Algodão</h2>
+              <h2 class="conteudo-principal-titulo">Venha conhecer<br><br>nossos<br><br>Produtos</h2>
+
               <div class="div-paragrafo">
                 <p class="conteudo-principal-paragrafo">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
               </div>
               <SocialMedia :textoParagrafo="textoPersonalizado" :exibirWhats="false"/>
           </aside>
           <article>
-              <img class="conteudo-principal-imagem" src="/img/logo.png" alt="Imagem tela principal">
+              <img class="conteudo-principal-imagem" src="/img/toque-de-algodao.jpg" alt="Imagem tela principal">
           </article>
     </main>
     <Footer/>
@@ -47,249 +47,103 @@ export default {
   }
 
   .conteudo-principal-titulo {
-    font-size: 66px; /* Reduzindo o tamanho do título */
+    font-size: 66px;
     font-family: var(--fonte--primaria);
-    color: var(--cor--titulo); /* Corrigindo a cor do título */
-    line-height: 60px;
+    color: var(--cor--titulo);
+    line-height: 50px;
   }
 
   .conteudo-principal-paragrafo {
-    line-height: 1.5; /* Aumentando o espaço entre as linhas */
+    line-height: 1.5; 
     max-width: 500px;
     font-family: var(--fonte--primaria);
-    color: var(--cor--fonte); /* Corrigindo a cor do texto */
-    margin-bottom: 20px; /* Aumentando o espaço inferior do parágrafo */
+    color: var(--cor--fonte); 
+    margin-bottom: 20px; 
     margin-top: 30px;
   }
 
   .conteudo-principal-imagem {
-    width: 100%; /* Ajustando a largura da imagem para ocupar toda a largura disponível */
-    max-width: 600px; /* Limitando a largura máxima da imagem */
+    width: 100%; 
+    max-width: 550px; 
+    box-shadow: 0px 0px 10px #b8446c;
   }
 
-span {
-  color: var(--cor--button);
-}
 
-/* responsividade */
-@media only screen and (max-width: 820px) {
-  .conteudo-principal-titulo {
-    font-size: 56px; /* Reduzindo o tamanho do título */
-    line-height: 60px;
-  }
 
-  .conteudo-principal-imagem {
-    width: 90%; 
-    max-width: 600px;
-  }
-}
 
-@media only screen and (max-width: 809px) {
-  .conteudo-principal-titulo {
-    font-size: 50px; /* Reduzindo o tamanho do título */
-    line-height: 50px;
-  }
 
-  .conteudo-principal-imagem {
-    width: 90%; 
-    max-width: 600px;
+  /* responsividade */
+  @media only screen and (min-width: 280px) and (max-width: 540px) {
+  main {
+    display: flex;
+    flex-direction: column-reverse;
+    margin-bottom: auto;
+    justify-content: space-between; 
   }
 
   .conteudo-principal {
-    width: 50%; /* Reduzindo um pouco a largura para criar mais espaço entre os elementos */
+    width: 100%; 
+  }
+
+  .conteudo-principal-titulo {
+    font-size: 43px;
+    font-family: var(--fonte--primaria);
+    color: var(--cor--titulo);
+    line-height: 40px;
+    padding-top: 50px;
+    text-align: center;
   }
 
   .conteudo-principal-paragrafo {
-    line-height: 1.5; /* Aumentando o espaço entre as linhas */
+    line-height: 1.5; 
     max-width: 500px;
-    margin-bottom: 20px; /* Aumentando o espaço inferior do parágrafo */
+    font-family: var(--fonte--primaria);
+    color: var(--cor--fonte); 
     margin-top: 30px;
-    font-size: 15px;
-  }
-}
-
-@media only screen and (max-width: 749px) {
-  .conteudo-principal-titulo {
-    font-size: 40px; /* Reduzindo o tamanho do título */
-    line-height: 50px;
   }
 
   .conteudo-principal-imagem {
     width: 80%; 
-    max-width: 600px;
-  }
-
-  .conteudo-principal {
-    width: 50%; /* Reduzindo um pouco a largura para criar mais espaço entre os elementos */
-  }
-
-  .conteudo-principal-paragrafo {
-    line-height: 1.5; /* Aumentando o espaço entre as linhas */
-    max-width: 500px;
-    margin-bottom: 20px; /* Aumentando o espaço inferior do parágrafo */
-    margin-top: 30px;
-    font-size: 15px;
+    display: block;
+    margin: 0 auto;
   }
 }
 
-@media only screen and (max-width: 709px) {
-  .conteudo-principal-titulo {
-    font-size: 40px; /* Reduzindo o tamanho do título */
-    line-height: 50px;
-  }
-
-  .conteudo-principal-imagem {
-    width: 80%;
-    margin-left: 40px; 
-  }
-
-  .conteudo-principal {
-    width: 60%; /* Reduzindo um pouco a largura para criar mais espaço entre os elementos */
-  }
-
-  .conteudo-principal-paragrafo {
-    line-height: 1.5; /* Aumentando o espaço entre as linhas */
-    margin-bottom: 20px; /* Aumentando o espaço inferior do parágrafo */
-    margin-top: 30px;
-    font-size: 13px;
-  }
-}
-
-@media only screen and (max-width: 650px) {
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
   main {
     display: flex;
     flex-direction: column-reverse;
-    justify-content: center; /* Adicionando espaço entre os elementos */
+    margin-bottom: auto;
+    justify-content: center; 
   }
 
   .conteudo-principal {
-    width: 100%; /* Reduzindo um pouco a largura para criar mais espaço entre os elementos */
+    width: 100%; 
   }
 
   .conteudo-principal-titulo {
-    font-size: 55px; /* Reduzindo o tamanho do título */
-    line-height: 50px;
+    font-size: 48px;
+    line-height: 35px;
     text-align: center;
-  }
-
-  .div-paragrafo {
-    display: flex;
-    justify-content: center;
-  }
-
-
-  .conteudo-principal-paragrafo {
-    text-align: center;
-    font-size: 18px;
-  }
-
-  .conteudo-principal-imagem {
-    width: 50%; /* Ajustando a largura da imagem para ocupar toda a largura disponível */
-    margin-bottom: 70px;
-  }
-
-  article {
-    display: flex;
-    justify-content: center;
-    align-self: center;
-  }
-}
-
-@media only screen and (max-width: 599px) {
-  .conteudo-principal {
-    max-width : 100%; /* Reduzindo um pouco a largura para criar mais espaço entre os elementos */
-    overflow-y: hidden;
-    overflow: hidden;
-  }
-
-  .conteudo-principal-titulo {
-    font-size: 50px; /* Reduzindo o tamanho do título */
-    line-height: 45px;
-    text-align: center;
+    padding-top: 50px;
   }
 
   .conteudo-principal-paragrafo {
+    line-height: 1.5; 
+    max-width: 100%;
+    font-size: 28px;
+    margin-top: 30px;
+    margin-bottom: 30px;
     text-align: center;
-    font-size: 18px;
   }
 
   .conteudo-principal-imagem {
-    width: 50%; /* Ajustando a largura da imagem para ocupar toda a largura disponível */
-    margin-bottom: 70px;
-  }
-
-}
-
-@media only screen and (max-width: 550px) {
-  .conteudo-principal {
-    max-width : 100%; /* Reduzindo um pouco a largura para criar mais espaço entre os elementos */
-    overflow-y: hidden;
-    overflow: hidden;
-  }
-
-  .conteudo-principal-titulo {
-    font-size: 50px; /* Reduzindo o tamanho do título */
-    line-height: 45px;
-  }
-
-  .conteudo-principal-paragrafo {
-    font-size: 18px;
-  }
-
-  .conteudo-principal-imagem {
-    width: 70%; /* Ajustando a largura da imagem para ocupar toda a largura disponível */
-    margin-bottom: 70px;
-  }  
-}
-
-@media only screen and (max-width: 480px) {
-  .conteudo-principal {
-    max-width : 100%; /* Reduzindo um pouco a largura para criar mais espaço entre os elementos */
-    overflow-y: hidden;
-    overflow: hidden;
-  }
-
-  .conteudo-principal-titulo {
-    font-size: 50px; /* Reduzindo o tamanho do título */
-    line-height: 40px;
-  }
-
-  .conteudo-principal-paragrafo {
-    text-align: center;
-    font-size: 17px;
-  }
-
-  .conteudo-principal-imagem {
-    width: 70%; /* Ajustando a largura da imagem para ocupar toda a largura disponível */
-    margin-bottom: 70px;
-  }  
-}
-
-@media only screen and (max-width: 420px) {
-  .conteudo-principal {
-    max-width : 100%; /* Reduzindo um pouco a largura para criar mais espaço entre os elementos */
-    overflow-y: hidden;
-    overflow: hidden;
-  }
-
-  .conteudo-principal-titulo {
-    font-size: 48px; /* Reduzindo o tamanho do título */
-    line-height: 40px;
-  }
-
-  .conteudo-principal-paragrafo {
-    text-align: center;
-    font-size: 15px;
-  }
-
-  .conteudo-principal-imagem {
-    width: 65%; /* Ajustando a largura da imagem para ocupar toda a largura disponível */
-    margin-bottom: 70px;
-  }  
-  article {
-    width: 100%;
+    width: 80%; 
+    display: block;
+    margin: 0 auto;
   }
 }
-</style>
+
+</style>    
 
 
